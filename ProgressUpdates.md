@@ -1,4 +1,4 @@
-# UnoServer
+# UnoServer - Group (Kyle Ferreira, Jake Balsamo) 
 # Progress Updates (Mar 4- April 17)
 
 ## Week 1 (Mar 4 - Mar8)
