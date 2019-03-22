@@ -22,7 +22,7 @@
 
 ### What will you do this week?
 * Finalize Plans
-* Work on building Peer to Peer Uno server with socket programming.
+* Work on building Client Server Uno Server with socket programming.
 
 ### Any blocking issues/challenges need to be addressed?
 *N/A
@@ -30,10 +30,10 @@
 ## Week 3 (Mar 18 - mar 22)
 
 ### What did your team do last week?
-* 
+* Write the basics of our client program to connect to the server.
 
 ### What will you do this week?
-* 
+*  Write the Server to allow multiple connections and finsish up communications. 
 
 ### Any blocking issues/challenges need to be addressed?
 *N/A
