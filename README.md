@@ -17,4 +17,6 @@
 1. Set up the server 
 2. Make sure server handles incoming connections properly
 
-
+*Week 4 
+1. Game and server testing
+2. Fix errors (if any)
