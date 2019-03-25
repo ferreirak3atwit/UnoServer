@@ -337,46 +337,7 @@ public class Uno{
 		sendToAll();
 	}
 
-	private static void swapHands() {
-		int playerNum = -1;
-		str = ("Players: ");
-		sendToPlayer(players.get(i));
-
-		for (int x = 0; x < players.size(); x++) // prints out the players the vurrentPlayer can switch hands with
-		{
-			if (!(x == i)) {
-				str = ("[(" + x + ") " + players.get(x) + "] ");
-				sendToPlayer(players.get(i));
-			}
-		}
-		System.out.println();
-		do { // asks the current player who they want to switch hands with
-			str = ("Which Player do you want to swap hands with? (Enter Player #): ");
-			sendToPlayer(players.get(i));
-
-			DatagramPacket packet = serverIO.getPacket();
-			if (packet != null && packet.getPort() == players.get(i).getPort()) {// if the packet is not empty and the
-																					// ports match
-				String pktMsg = new String(packet.getData());
-				pktMsg = pktMsg.substring(0, packet.getLength());
-				playerNum = Integer.parseInt(pktMsg);
-				if (playerNum == i || playerNum < 0 || playerNum > players.size() - 1) {
-					str = ("Error: Invalid player.");
-					sendToPlayer(players.get(i));
-				}
-			}
-		} while (playerNum == i || playerNum < 0 || playerNum > players.size() - 1);
-
-		str = players.get(i) + " switched hands with " + players.get(playerNum);
-		System.out.println(str);
-		sendToAll();
-
-		Hand tempHand = players.get(i).getHand();
-		players.get(i).switchHand(players.get(playerNum).getHand());// giving current player the other player's hand
-		players.get(playerNum).switchHand(tempHand);// giving the other player the current players hand
-		changeColor(); // playing as wild card after switching
-
-	}
+	
 
 	private static void getNextPlayerIndex() {
 		i = getNextI();
