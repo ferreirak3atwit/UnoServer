@@ -37,3 +37,14 @@
 
 ### Any blocking issues/challenges need to be addressed?
 *N/A
+
+## Week 3 (Mar 25 - mar 29)
+
+### What did your team do last week?
+* Wrote the Sever in Python to handle any incoming connections with correct port number
+
+### What will you do this week?
+* Fix issues with client not working properly with outputting data
+
+### Any blocking issues/challenges need to be addressed?
+*Data output to server not working. 
