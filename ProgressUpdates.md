@@ -41,10 +41,22 @@
 ## Week 3 (Mar 25 - mar 29)
 
 ### What did your team do last week?
-* Wrote the Sever in Python to handle any incoming connections with correct port number
+* Wrote the Sever in Java to handle any incoming connections with correct port number
 
 ### What will you do this week?
 * Fix issues with client not working properly with outputting data
 
 ### Any blocking issues/challenges need to be addressed?
 *Data output to server not working. 
+
+
+## Week 4 (Apr 1 - Apr 5)
+
+### What did your team do last week?
+* Finished up all the Card variables and instances. Deck and Piles set up as well as serverIO.
+
+### What will you do this week?
+* Fix error when pringing player names, Make sure logic for game stays true when needed. Fix any issues that occur. 
+
+### Any blocking issues/challenges need to be addressed?
+*Player names not printing correctly. (Printing as Player@28d93b30) 
