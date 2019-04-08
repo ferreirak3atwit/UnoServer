@@ -143,10 +143,6 @@ public class Server {
 		{
 			serverIO.sendpkt(new DatagramPacket(s.getBytes(), s.getBytes().length, players.get(i).getIP(), players.get(i).getport()));
 		}
-		for(int i = 0; i < players.size(); i++)
-		{
-			serverIO.sendpkt(new DatagramPacket(s.getBytes(), s.getBytes().length, players.get(i).getIP(), players.get(i).getport()));
-		}
 	}
 	
 	public static void initializegame() throws IOException {
