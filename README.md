@@ -20,3 +20,28 @@
 *Week 4 
 1. Game and server testing
 2. Fix errors (if any)
+
+
+## Getting Started (10 pts)
+### Install
+-Download Folder with all the game files, import into eclipse.
+### Run
+-Run Server.java to start the server
+-Run Every player must run unoclient.java to join the server and play.
+  -Console will prompt the user to enter in the information they need. 
+
+## Features (10 pts)
+1. Multiple client-server connections.
+2. Packets of information sending back and forth. 
+
+
+## Demo video (20 pts)
+
+
+
+## Team members (10 pts)
+
+* Kyle Ferreira, Team Lead
+* Jake Balsamo, Bug Fixer
+
+
