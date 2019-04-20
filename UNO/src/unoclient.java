@@ -47,8 +47,7 @@ public class unoclient {
 			if (packet!=null) {
 				String pkt = new String(packet.getData());
 				pkt = pkt.substring(0, packet.getLength());
-				if (pkt.equals("Select a card # to play.") || 
-						pkt.equals("Error: you chose a number that cant be played!\nSelect a card # to play.")) {
+				if (pkt.equals("Select a card # to play.") || pkt.equals("Error: you chose a number that cant be played!\nSelect a card # to play.")) {
 					System.out.println(pkt);
 					int x = in.nextInt();
 					String msg = x+"";
