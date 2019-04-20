@@ -83,24 +83,24 @@ public class Deck extends Pile {
 		super.add(new Card(Color.GREEN, CValue.NINE));
 		super.add(new Card(Color.GREEN, CValue.NINE));
 		super.add(new Card(Color.YELLOW, CValue.NINE));
-		super.add(new Card(Color.YELLOW, CValue.SKIP));
-		super.add(new Card(Color.RED, CValue.REVERSE));
-		super.add(new Card(Color.RED, CValue.REVERSE));
-		super.add(new Card(Color.BLUE, CValue.REVERSE));
-		super.add(new Card(Color.BLUE, CValue.REVERSE));
-		super.add(new Card(Color.GREEN, CValue.REVERSE));
-		super.add(new Card(Color.GREEN, CValue.REVERSE));
-		super.add(new Card(Color.YELLOW, CValue.REVERSE));
-		super.add(new Card(Color.YELLOW, CValue.REVERSE));
-		super.add(new Card(Color.RED, CValue.SKIP));
-		super.add(new Card(Color.RED, CValue.SKIP));
-		super.add(new Card(Color.BLUE, CValue.SKIP));
-		super.add(new Card(Color.BLUE, CValue.SKIP));
-		super.add(new Card(Color.GREEN, CValue.SKIP));
-		super.add(new Card(Color.GREEN, CValue.SKIP));
-		super.add(new Card(Color.YELLOW, CValue.SKIP));
 		super.add(new Card(Color.YELLOW, CValue.NINE));
-		super.add(new Card(Color.RED, CValue.DRAW2));
+		super.add(new Card(Color.RED, CValue.REVERSE));
+		super.add(new Card(Color.RED, CValue.REVERSE));
+		super.add(new Card(Color.BLUE, CValue.REVERSE));
+		super.add(new Card(Color.BLUE, CValue.REVERSE));
+		super.add(new Card(Color.GREEN, CValue.REVERSE));
+		super.add(new Card(Color.GREEN, CValue.REVERSE));
+		super.add(new Card(Color.YELLOW, CValue.REVERSE));
+		super.add(new Card(Color.YELLOW, CValue.REVERSE));
+		super.add(new Card(Color.RED, CValue.SKIP));
+		super.add(new Card(Color.RED, CValue.SKIP));
+		super.add(new Card(Color.BLUE, CValue.SKIP));
+		super.add(new Card(Color.BLUE, CValue.SKIP));
+		super.add(new Card(Color.GREEN, CValue.SKIP));
+		super.add(new Card(Color.GREEN, CValue.SKIP));
+		super.add(new Card(Color.YELLOW, CValue.SKIP));
+		super.add(new Card(Color.YELLOW, CValue.SKIP));
+/*		super.add(new Card(Color.RED, CValue.DRAW2));
 		super.add(new Card(Color.RED, CValue.DRAW2));
 		super.add(new Card(Color.BLUE, CValue.DRAW2));
 		super.add(new Card(Color.BLUE, CValue.DRAW2));
@@ -115,14 +115,13 @@ public class Deck extends Pile {
 		super.add(new Card(Color.BLACK, CValue.DRAW4));
 		super.add(new Card(Color.BLACK, CValue.DRAW4));
 		super.add(new Card(Color.BLACK, CValue.DRAW4));
-		super.add(new Card(Color.BLACK, CValue.DRAW4));
+		super.add(new Card(Color.BLACK, CValue.DRAW4));*/
 		// TODO Auto-generated constructor stub
 	}
 	public ArrayList<Hand> deal(int players)
 	{
 		ArrayList<Hand> hands = new ArrayList<Hand>();
 		super.shuffle();
-		System.out.println(super.toString());
 		for(int i = 0; i < players; i++)		//makes a hand and adds the cards to it
 		{
 			Hand hand = new Hand();
