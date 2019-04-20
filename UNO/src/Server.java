@@ -78,9 +78,7 @@ public class Server {
 	}
 	
 	private static void changecolor() throws IOException {
-		s = "Wild card has been played";
-		System.out.println(s);
-		sendtoAll();
+		
 		String color  = "white";
 		s = "Choose a color (Red, Blue, Green, Yellow)";
 		sendplayer(players.get(playerindex));
@@ -217,16 +215,17 @@ public class Server {
 		
 		int endnumber = players.size()-1;
 		while (players.size()>endnumber) {
-			for (int i = playerindex; i < players.size() && i>=0; i+= direction) {
-				Player current = players.get(i);
-				s = topcard + " is on top ";
+			for (playerindex = 0; playerindex < players.size() && playerindex>=0; playerindex+= direction) {
+				Player current = players.get(playerindex);
+				
+				s = "\n" + topcard + " is on top ";
 				System.out.println(s);
 				sendtoAll();
-				s = current +"'s turn ";
+				s = current +"'s turn\n ";
 				System.out.println(s);
 				sendtoAll();
 				
-				if (current.gethand().playable(topcard)){
+				if (!current.gethand().playable(topcard)){
 					if (deck.isEmpty()) {
 						for(int j = 0; j < discard.Length(); j++)		//removes cards from discard pile and adds them to the deck
 							deck.add(discard.remove(j));
@@ -236,6 +235,7 @@ public class Server {
 					s = current + " can't play a card so they drew 1 card";
 					System.out.println(s);
 					sendtoAll();
+					break;
 				}
 				s = "Your hand: " + current.gethand().toString();
 				sendplayer(current);
@@ -277,16 +277,19 @@ public class Server {
 						if(chosencard.iswild()) {
 							switch (chosencard.getValue()) {
 							case REVERSE: reverse();
+							break;
+					
+							case SKIP: getindex();
 							s = players.get(playerindex)+ " was skipped";
 							System.out.println(s);
 							sendtoAll();
 							skip = true;
 							break;
 							
-							case SKIP: getindex();
+							case WILD: changecolor();
 							break;
 							
-							case WILD: changecolor();
+							case DRAW2: draw(2, chosencard);
 							break;
 							
 							case DRAW4: changecolor(); draw(4, chosencard);
