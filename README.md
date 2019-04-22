@@ -21,8 +21,6 @@
 1. Game and server testing
 2. Fix errors (if any)
 
-
-## Getting Started (10 pts)
 ### Install
 -Download Folder with all the game files, import into eclipse.
 ### Run
@@ -30,16 +28,18 @@
 -Run Every player must run unoclient.java to join the server and play.
   -Console will prompt the user to enter in the information they need. 
 
-## Features (10 pts)
+## Features 
 1. Multiple client-server connections.
-2. Packets of information sending back and forth. 
+2. Players can join game
+3. Able to see hand and select which card to play
+4. Win when you play last card in hand
 
 
-## Demo video (20 pts)
+## Demo video 
 
 https://www.youtube.com/watch?v=rEk7QQrgIEs&feature=youtu.be
 
-## Team members (10 pts)
+## Team members 
 
 * Kyle Ferreira, Team Lead
 * Jake Balsamo, Bug Fixer
